@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios</title>
+    <style>
+        body {
+            background-color: rgb(0, 153, 204);
+        }
+        #main {
+            background-color: white;
+            width: 700px;
+            font-size: larger;
+            margin: auto;
+            line-height: 30px;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 3px 3px 3px 3px;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <form id="fml" action="" method="post">
+            <label for="txtn1">Nome: </label><input type="text" name="txtn1" id="txtn1"><br>
+            <label for="txtn2">Sobrenome: </label><input type="text" name="txtn2" id="txtn2"><br>
+            <label for="txtn3">Peso: </label><input type="text" name="txtn3" id="txtn3"><br>
+            <label for="txtn4">Altura: </label><input type="text" name="txtn4" id="txtn4"><br>
+            <input type="submit" value="Enviar"><br>
+        </form>
+        <p id="res"></p>
+    </div>
+
+    <script>
+        const pessoas = [];
+
+         document.getElementById("fml")
+        .addEventListener("submit", function (evento) {
+             evento.preventDefault();
+
+            const form = evento.target;
+            const nome = form.querySelector("#txtn1").value;
+            const sobrenome = form.querySelector("#txtn2").value;
+            const peso = form.querySelector("#txtn3").value;
+            const altura = form.querySelector("#txtn4").value;
+
+            pessoas.push({
+                nome: nome,
+                sobrenome: sobrenome,
+                peso: peso,
+                altura: altura
+            });
+
+            console.log(pessoas);
+
+            const resultado = document.getElementById("res");
+            resultado.innerHTML += `${nome}, ${sobrenome}, ${peso}, ${altura}<br>`;
+        });
+    </script>
+</body>
+</html>
