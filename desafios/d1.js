@@ -16,4 +16,4 @@
 }
 
 // Exemplo de uso da função
-ssmd(10, 5);
+ssmd(10, 5)
