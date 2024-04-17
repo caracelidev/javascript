@@ -8,6 +8,8 @@ const filha2 = Object.create(pai, {
     nome:{ value: "Carlinha", writable: false, enumerable: true}
 })
 
-filha2.nome = "Jhonson"
-
+filha2.nome = "Jhonson" 
 console.log(filha2)
+
+console.log(Object.keys(filha1))
+console.log(Object.keys(filha2))
