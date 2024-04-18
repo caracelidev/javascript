@@ -2,7 +2,7 @@ const pilotos = ["Vettel", "Alonso", "Raikonnen", "Massa"]
 pilotos.pop() // Remove o último elemento do Array //
 console.log(pilotos)
 
-pilotos.push("Verstappen")
+pilotos.push("Verstappen") // Adiciona um elemento ao final do Array //
 console.log(pilotos)
 
 pilotos.shift() // Remove o primeiro elemento do Array //
