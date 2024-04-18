@@ -34,7 +34,7 @@ console.log(produtos.filter(function(produtos){
 }))
 
 const caro = produto => produto.preco >= 500
-const fragil = produto => produto.fragil === true
+const fragil = produto => produto.fragil === t
 
 console.log(produtos.filter(caro))
 console.log(produtos.filter(fragil))
