@@ -1,5 +1,4 @@
 // São funções que constroem objetos //
-
 function criarPessoa() {
     return {
         nome: Lincoln,
