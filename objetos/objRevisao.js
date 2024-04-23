@@ -3,7 +3,11 @@ pessoa1.nome = 'Lincoln'
 pessoa1.sobrenome = 'Caraceli'
 pessoa1.idade = 18
 pessoa1.cidade = 'Limeira'
-console.log(pessoa1)
+pessoa1.falarNome = function(){
+    console.log(`${this.nome} está falando seu nome`)
+}
+pessoa1.falarNome()
+
 
 const pessoa2 = {
     nome: 'Lego',
