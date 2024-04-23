@@ -20,3 +20,4 @@ const PessoasMap = pessoas.map(function(pessoas){
 })
 
 console.log(PessoasMap)
+
