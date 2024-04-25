@@ -15,7 +15,7 @@ const pessoas = [
     {nome: 'Leo', idade: 86}
 ]
 
-const PessoasMap = pessoas.map(function(pessoas){
+const PessoasMap = pessoas.map((pessoas) => {
     return pessoas.nome
 })
 

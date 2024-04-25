@@ -15,7 +15,7 @@ console.log(produtos.filter(function(produtos){
 }))
 
 
-console.log(produtos.filter(function(produtos){
+console.log(produtos.filter((produtos) => {
     return produtos.preco <= 18.99
 }))
 
