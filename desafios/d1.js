@@ -15,5 +15,4 @@
     console.log("Divisão:", x / y) 
 }
 
-// Exemplo de uso da função
 ssmd(10, 5)
